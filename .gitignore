@@ -1,0 +1,190 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+*.jar
+*.class
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+
+# Gradle files
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+*.log.*
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ
+*.iml
+.idea/
+.idea/
+*.iws
+*.ipr
+*~
+*.swp
+
+# Keystore files
+*.jks
+*.keystore
+*.key
+
+# Google Services (e.g., Firebase)
+google-services.json
+
+# Fastlane specific
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Version control
+vcs.xml
+
+# Local configuration files
+*.orig
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild/
+.cxx/
+
+# Google Services (e.g. APIs or Firebase)
+# google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# Build cache
+.build-cache/
+
+# Local development configuration
+local.properties
+
+# Debug keystore
+debug.keystore
+
+# Proguard
+proguard/
+proguard-rules.pro
+
+# Android Profiling
+*.hprof
+
+# Android Studio generated files and folders
+capture/
+output.json
+prefxml/
+
+# NDK
+obj/
+
+# IntelliJ IDEA
+*.iws
+/out/
+.idea_modules/
+.atom/
+.idea/
+.DS_Store
+.cvsignore
+.svn/
+.metadata/
+.gradle/
+checkouts/
+*.tmproj
+*.vs/
+*.vscode/
+nbproject/private/
+build/
+.nb-gradle/
+
+# Fastlane files
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Version control
+vcs.xml
+
+# Local configuration files
+*.orig
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild/
+.cxx/
+
+# Google Services (e.g. APIs or Firebase)
+# google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# Build cache
+.build-cache/
+
+# Local development configuration
+local.properties
+
+# Debug keystore
+debug.keystore
+
+# Proguard
+proguard/
+proguard-rules.pro
+
+# Android Profiling
+*.hprof
+
+# Android Studio generated files and folders
+capture/
+output.json
+prefxml/
+
+# NDK
+obj/
+
+# IntelliJ IDEA
+*.iws
+/out/
+.idea_modules/
+.atom/
+.idea/
+.DS_Store
+.cvsignore
+.svn/
+.metadata/
+.gradle/
+checkouts/
+*.tmproj
+*.vs/
+*.vscode/
+nbproject/private/
+build/
+.nb-gradle/

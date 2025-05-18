@@ -1,0 +1,36 @@
+// JellyfinTV/settings.gradle
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+    // You had a resolutionStrategy here which is good, ensure it uses versions from TOML or explicit
+    // For example:
+    // resolutionStrategy {
+    //    eachPlugin {
+    //        if (requested.id.id == libs.plugins.android.application.get().pluginId) {
+    //            useVersion(libs.versions.agp.get())
+    //        }
+    //        // ... and so on for other plugins if needed, though TOML plugin versions often suffice
+    //    }
+    // }
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // Crucial
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven' }
+    }
+    // Version catalog is loaded automatically from gradle/libs.versions.toml
+}
+
+rootProject.name = "JellyfinTV"
+include ':app'
+
+enableFeaturePreview('STABLE_CONFIGURATION_CACHE')
+enableFeaturePreview('TYPESAFE_PROJECT_ACCESSORS')

@@ -1,0 +1,100 @@
+# gradle/libs.versions.toml
+
+[versions]
+# Kotlin
+kotlin = "2.1.21"
+coroutines = "1.10.2"
+compileSdk = "34"
+leanbackPaging = "1.1.0"
+media3Exoplayer = "1.7.1"
+media3Ui = "1.7.1"
+minSdk = "21"
+targetSdk = "34"
+
+# Android Gradle Plugin
+agp = "8.10.0" # For com.android.tools.build:gradle
+
+# AndroidX
+androidxCore = "1.16.0"
+appcompat = "1.7.0"
+material = "1.12.0"
+constraintLayout = "2.2.1"
+lifecycle = "2.9.0"
+navigation = "2.9.0"
+leanback = "1.2.0" # Your leanbackVersion
+media3 = "1.7.1"
+
+# Jellyfin
+jellyfinClientSdk = "1.6.8"
+
+# Image Loading
+glide = "4.16.0"
+
+# Dependency Injection
+koin = "4.0.4"
+hilt = "2.56.2" # For com.google.dagger:hilt-android-gradle-plugin and dependencies
+
+# Network
+retrofit = "2.9.0"
+okhttp = "4.11.0"
+
+# Ktlint
+ktlintGradle = "12.2.0"
+
+
+[libraries]
+# Kotlin
+androidx-leanback-paging = { module = "androidx.leanback:leanback-paging", version.ref = "leanbackPaging" }
+androidx-leanback-tab = { module = "androidx.leanback:leanback-tab", version.ref = "leanbackPaging" }
+androidx-media3-exoplayer-dash = { module = "androidx.media3:media3-exoplayer-dash", version.ref = "media3" }
+androidx-media3-exoplayer-v171 = { module = "androidx.media3:media3-exoplayer", version.ref = "media3Exoplayer" }
+androidx-media3-ui-leanback = { module = "androidx.media3:media3-ui-leanback", version.ref = "media3" }
+androidx-media3-ui-v171 = { module = "androidx.media3:media3-ui", version.ref = "media3Ui" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" } # Often needed with coroutines-android
+
+# AndroidX
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintLayout" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+androidx-leanback = { group = "androidx.leanback", name = "leanback", version.ref = "leanback" }
+
+# Media3 (ExoPlayer) - Example for common modules
+androidx-media3-exoplayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "media3" }
+androidx-media3-ui = { group = "androidx.media3", name = "media3-ui", version.ref = "media3" }
+androidx-media3-exoplayer-leanback = { group = "androidx.media3", name = "media3-exoplayer-leanback", version.ref = "media3" } # If using leanback integration
+
+# Image Loading
+glide-core = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+
+# Jellyfin SDK
+jellyfin-core = { group = "com.jellyfin.sdk", name = "jellyfin-core", version.ref = "jellyfinClientSdk" }
+jellyfin-sdk-apiClientAndroid = { group = "org.jellyfin.sdk", name = "api-client-android", version.ref = "jellyfinClientSdk" }
+jellyfin-sdk-core = { group = "org.jellyfin.sdk", name = "core", version.ref = "jellyfinClientSdk" }
+jellyfin-sdk-androidSpecific = { group = "org.jellyfin.sdk", name = "android", version.ref = "jellyfinClientSdk" }
+
+
+# Koin
+koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+
+# Hilt (for runtime dependencies, not the plugin)
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" } # Or just 'kotlin-parcelize' if that's the ID
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" } # For applying in app/build.gradle
+navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlintGradle" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }

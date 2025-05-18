@@ -1,0 +1,4 @@
+// JellyfinTV/build.gradle (ROOT file)
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}

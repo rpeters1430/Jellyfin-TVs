@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/space_medium"
+    android:paddingBottom="@dimen/space_medium">
+
+    <TextView
+        android:id="@+id/header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_medium"
+        android:layout_marginBottom="@dimen/space_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textStyle="bold"
+        tools:text="Section Title" />
+
+    <androidx.leanback.widget.HorizontalGridView
+        android:id="@+id/row_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingStart="@dimen/space_medium"
+        android:paddingEnd="@dimen/space_medium"
+        app:rowHeight="wrap_content"
+        app:windowAlignmentOffsetPercent="50%"
+        app:windowAlignment="start"
+        app:windowAlignmentOffset="0dp"
+        app:windowAlignmentOffsetPercent="50%"
+        app:windowAlignmentOffsetPx="@dimen/space_medium"
+        app:windowAlignmentOffsetStart="@dimen/space_medium"
+        app:windowAlignmentOffsetEnd="@dimen/space_medium"/>
+
+</LinearLayout>

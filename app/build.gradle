@@ -1,0 +1,96 @@
+// JellyfinTV/app/build.gradle
+
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.parcelize) // Make sure this alias is in your TOML
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.navigation.safeargs.kotlin)
+    alias(libs.plugins.kotlin.kapt) // Use alias for kapt
+}
+
+android {
+    namespace 'com.example.jellyfintv'
+    compileSdk 35
+    // Use version from TOML
+
+    defaultConfig {
+        applicationId "com.example.jellyfintv"
+        minSdk libs.versions.minSdk.get().toInteger() // Use version from TOML
+        targetSdk libs.versions.targetSdk.get().toInteger() // Use version from TOML
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false // Set to true for actual release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        // coreLibraryDesugaringEnabled true // Only if you need it and have the desugar_jdk_libs dependency
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    buildToolsVersion '35.0.0'
+}
+
+dependencies {
+    implementation libs.kotlin.stdlib
+    implementation libs.kotlinx.coroutines.android
+    implementation libs.kotlinx.coroutines.core
+    implementation libs.androidx.media3.ui.leanback
+    implementation libs.androidx.media3.exoplayer.v171
+    implementation libs.androidx.media3.ui.v171
+    implementation libs.androidx.media3.exoplayer.dash
+    implementation(libs.jellyfin.sdk.apiClientAndroid)
+    implementation(libs.jellyfin.sdk.core)
+    implementation(libs.jellyfin.sdk.androidSpecific)
+
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.material
+    implementation libs.androidx.constraintlayout
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.lifecycle.viewmodel.ktx
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+    implementation libs.androidx.leanback
+
+    implementation libs.androidx.media3.exoplayer
+    implementation libs.androidx.media3.ui
+    implementation libs.androidx.media3.exoplayer.leanback
+
+    // Jellyfin SDK - VERIFY THESE ALIASES AND THE ACTUAL ARTIFACTS
+    implementation libs.jellyfin.core
+
+    implementation libs.glide.core
+    annotationProcessor libs.glide.compiler
+    // leanback-preference is an add-on that provides a settings UI for TV apps.
+    implementation libs.androidx.leanback
+
+    // leanback-paging is an add-on that simplifies adding paging support to a RecyclerView Adapter.
+    implementation(libs.androidx.leanback.paging)
+
+    // leanback-tab is an add-on that provides customized TabLayout to be used as the top navigation bar.
+    implementation(libs.androidx.leanback.tab)
+
+    implementation libs.koin.core
+    implementation libs.koin.android
+
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+
+    // If you enabled coreLibraryDesugaringEnabled, you need this:
+    // coreLibraryDesugaring libs.desugar.jdk.libs // Add this to your TOML
+}
