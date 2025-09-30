@@ -7,7 +7,7 @@ coroutines = "1.10.2"
 compileSdk = "34"
 leanbackPaging = "1.1.0"
 media3Exoplayer = "1.7.1"
-media3Ui = "1.7.1"
+media3Ui = "1.8.0"
 minSdk = "21"
 targetSdk = "34"
 
