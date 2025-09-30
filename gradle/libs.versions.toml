@@ -31,7 +31,7 @@ jellyfinClientSdk = "1.6.8"
 glide = "4.16.0"
 
 # Dependency Injection
-koin = "4.0.4"
+koin = "4.1.1"
 hilt = "2.56.2" # For com.google.dagger:hilt-android-gradle-plugin and dependencies
 
 # Network
