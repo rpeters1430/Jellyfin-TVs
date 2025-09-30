@@ -16,7 +16,7 @@ agp = "8.13.0" # For com.android.tools.build:gradle
 
 # AndroidX
 androidxCore = "1.17.0"
-appcompat = "1.7.0"
+appcompat = "1.7.1"
 material = "1.13.0"
 constraintLayout = "2.2.1"
 lifecycle = "2.9.0"
