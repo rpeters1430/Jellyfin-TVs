@@ -2,7 +2,7 @@
 
 [versions]
 # Kotlin
-kotlin = "2.2.20"
+kotlin = "2.2.21"
 coroutines = "1.10.2"
 compileSdk = "34"
 leanbackPaging = "1.1.0"
