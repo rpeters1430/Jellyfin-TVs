@@ -39,7 +39,7 @@ retrofit = "2.9.0"
 okhttp = "4.11.0"
 
 # Ktlint
-ktlintGradle = "13.1.0"
+ktlintGradle = "14.0.1"
 
 
 [libraries]
