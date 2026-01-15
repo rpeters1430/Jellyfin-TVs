@@ -12,7 +12,7 @@ minSdk = "21"
 targetSdk = "34"
 
 # Android Gradle Plugin
-agp = "8.13.1" # For com.android.tools.build:gradle
+agp = "9.0.0" # For com.android.tools.build:gradle
 
 # AndroidX
 androidxCore = "1.17.0"
