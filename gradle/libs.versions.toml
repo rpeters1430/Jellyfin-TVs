@@ -32,7 +32,7 @@ glide = "5.0.5"
 
 # Dependency Injection
 koin = "4.1.1"
-hilt = "2.57.2" # For com.google.dagger:hilt-android-gradle-plugin and dependencies
+hilt = "2.59" # For com.google.dagger:hilt-android-gradle-plugin and dependencies
 
 # Network
 retrofit = "2.9.0"
