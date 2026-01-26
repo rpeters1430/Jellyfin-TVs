@@ -22,7 +22,7 @@ constraintLayout = "2.2.1"
 lifecycle = "2.10.0"
 navigation = "2.9.6"
 leanback = "1.2.0" # Your leanbackVersion
-media3 = "1.9.0"
+media3 = "1.9.1"
 
 # Jellyfin
 jellyfinClientSdk = "1.6.8"
