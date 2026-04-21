@@ -28,7 +28,7 @@ media3 = "1.10.0"
 jellyfinClientSdk = "1.6.8"
 
 # Image Loading
-glide = "5.0.5"
+glide = "5.0.7"
 
 # Dependency Injection
 koin = "4.2.1"
