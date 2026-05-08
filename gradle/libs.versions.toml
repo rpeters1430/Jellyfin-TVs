@@ -3,7 +3,7 @@
 [versions]
 # Kotlin
 kotlin = "2.3.21"
-coroutines = "1.10.2"
+coroutines = "1.11.0"
 compileSdk = "34"
 leanbackPaging = "1.1.0"
 media3Exoplayer = "1.10.0"
