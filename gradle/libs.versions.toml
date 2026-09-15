@@ -2,12 +2,12 @@
 
 [versions]
 # Kotlin
-kotlin = "2.4.10"
+kotlin = "2.4.20"
 coroutines = "1.11.0"
 compileSdk = "34"
 leanbackPaging = "1.1.0"
-media3Exoplayer = "1.11.0"
-media3Ui = "1.11.0"
+media3Exoplayer = "1.11.1"
+media3Ui = "1.11.1"
 minSdk = "21"
 targetSdk = "34"
 
@@ -20,9 +20,9 @@ appcompat = "1.8.0"
 material = "1.14.0"
 constraintLayout = "2.2.2"
 lifecycle = "2.11.0"
-navigation = "2.10.0"
+navigation = "2.10.1"
 leanback = "1.2.0" # Your leanbackVersion
-media3 = "1.11.0"
+media3 = "1.11.1"
 
 # Jellyfin
 jellyfinClientSdk = "1.6.8"
